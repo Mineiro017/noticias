@@ -42,6 +42,9 @@ body.menu-open::before {
     border: none;
     background: none;
     width: fit-content;
+
+    max-width: 1110px;
+    margin-inline: auto;
 }
 
 .header nav.mobile {
@@ -76,6 +79,11 @@ body.menu-open::before {
     color: var(--dark-blue);
     font-size: 1.125rem;
     line-height: 1.5rem;
+}
+
+main {
+    max-width: 1110px;
+    margin-inline: auto;
 }
 
 
@@ -183,7 +191,38 @@ body.menu-open::before {
 }
 
 @media(min-width: 1110px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.75rem;
+    }
+
+    .primeira-secao {
+        grid-column: 1 / 3;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .primeira-secao picture {
+        grid-column: 1/ 3;
+    }
+
+
+
     header > button{
         display: none;
+    }
+
+    header .desktop {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    header .desktop a {
+        font-size: 0.9375rem;
+        line-height: 1.625rem;
+        text-decoration: none;
+        color: var(--gunmetal);
     }
 }
