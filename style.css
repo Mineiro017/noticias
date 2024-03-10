@@ -41,3 +41,36 @@ body {
     width: 100%;
     margin-bottom: 1.5rem;
 }
+
+.primeira-secao h1 {
+    font-size: 2.5rem;
+    line-height: 100%;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+
+
+.primeira-secao p {
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
+    color: var(--gunmetal);
+    margin-bottom: 1.5rem;
+}
+
+.primeira-secao button {
+    padding: 0.75rem 2rem;
+    background-color: var(--vermillion);
+    border: none;
+    text-transform: uppercase;
+    color: var(--almost-white);
+    font-weight: 700;
+    font-size: 0.8754rem;
+    letter-spacing: 0.25rem;
+    line-height: 1.5;
+}
+
+.segunda-secao {
+    background-color: var(--dark-blue);
+    margin-bottom: 4rem;
+    
+}
