@@ -190,23 +190,6 @@ main {
     color: var(--gunmetal);
 }
 
-@media(min-width: 1110px){
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1.75rem;
-    }
-
-    .primeira-secao {
-        grid-column: 1 / 3;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .primeira-secao picture {
-        grid-column: 1/ 3;
-    }
 
 
 
@@ -225,4 +208,41 @@ main {
         text-decoration: none;
         color: var(--gunmetal);
     }
-}
+
+    header .desktop a:hover {
+        color: var(--vermillion);
+    }
+
+        @media(min-width: 1110px){
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.75rem;
+        }
+    
+        .primeira-secao {
+            grid-column: 1 / 3;
+    
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.75rem;
+        }
+    
+        .primeira-secao picture {
+            grid-column: 1/ 3;
+            margin: 0;
+        }
+    
+        .primeira-secao img {
+            margin: 0;
+        }
+    
+        .primeira-secao h1 {
+            font-size: 3.5rem;
+        }
+    
+        .segunda-secao h2 {
+            font-size: 2.5rem;
+        }
+    }
+            
